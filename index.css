@@ -1,0 +1,108 @@
+/*Control buttons*/
+.button {
+    background: grey;
+    cursor: pointer;
+    height: 40px;
+    font-family: 'Orbitron';
+}
+/*Start button is big*/
+.bigButton {
+    width: 100px;
+}
+.smallButton {
+    width: 50px;
+}
+/*Show in a row*/
+.row{
+    display: flex;
+    position: absolute;
+}
+
+/*Colors*/
+#redGrad {
+    background-image: linear-gradient(red, maroon);
+}
+#blueGrad {
+    background-image: linear-gradient(blue, navy);
+}
+#greenGrad {
+    background-image: linear-gradient(lime, green);
+}
+#yellowGrad {
+    background-image: linear-gradient(yellow, olive);
+}
+#blackGrad {
+    background-image: linear-gradient(#28282B, black);
+}
+#black{
+    background-color: black;
+}
+
+/*Toggle on for flash effect*/
+.flash{
+    display: none;
+}
+/*When game starts*/
+.disableButton{
+    cursor: none;
+}
+
+.circle {
+    border-radius: 50%;
+}
+/*Colored circle*/
+.smallCircle {
+    position:absolute;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+/*Black circle under colored*/
+.bigCircle {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Main circle*/
+.centreCircle{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*game light turns on after 3 seconds*/
+#light{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    bottom: 325px;
+}
+/*positioning*/
+.topLeft {
+    top: 175px;
+    left: 35%;
+}
+.topRight {
+    top: 175px;
+    left: 55%;
+}
+.bottomLeft {
+    top: 425px;
+    left: 35%;
+}
+.bottomRight {
+    top: 425px;
+    left: 55%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 15%;
+}

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simon</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="center">
+        <!--Center circles and buttons-->
+        <div class="circle centreCircle" id="blackGrad">
+            <div class="row">
+                <button class="button smallButton" id ="highScore">00</button>
+                <!--Turns on the gamelight and starts countdown-->
+                <button onclick=startGame(this) class="button bigButton" id="startButton">START</button>
+                <button class="button smallButton" id="lastScore">00</button>
+            </div>
+        </div>
+        <div class="circle" id="light">
+
+        </div>
+        <!--Clickable Coloured circles-->
+        <div class="circle topLeft bigCircle" id="black">
+            <div class="circle smallCircle" id="greenGrad" onclick=clicked(this)></div>
+        </div>
+        <div class="circle topRight bigCircle" id="black">
+            <div class="circle smallCircle" id="redGrad" onclick=clicked(this)></div>
+        </div>
+        <div class="circle bottomLeft bigCircle" id="black">
+            <div class="circle smallCircle" id="yellowGrad" onclick=clicked(this)></div>
+        </div>
+        <div class="circle bottomRight bigCircle" id="black">
+            <div class="circle smallCircle" id="blueGrad" onclick=clicked(this)></div>
+        </div>
+    </div>
+</body>
+</html>
